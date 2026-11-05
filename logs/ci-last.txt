@@ -1,0 +1,18 @@
+$ python3 -m unittest discover -s tests
+F.........
+======================================================================
+FAIL: test_missing_file_exits_2 (test_cli.Cli.test_missing_file_exits_2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/ci/workspace/tests/test_cli.py", line 23, in test_missing_file_exits_2
+    self.assertEqual(main(["/nonexistent/amounts.txt"]), 2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 2
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+FAILED (failures=1)
+
+DeprecationWarning: the 'locale' module's getdefaultlocale is deprecated (harmless; emitted by the CI image)
+INFO coverage 78% (informational, no threshold)
